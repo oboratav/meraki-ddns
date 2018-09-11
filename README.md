@@ -1,6 +1,8 @@
 # meraki-ddns
 
-This is a very simple tool that creates and updates a Route53 `A` record that points to a network that doesn't have a static IP address. While Meraki already offers this feature on its MX firewalls by giving you a `dynamic-m.com` hostname to point a `CNAME` record to, this tool allows you to have this functionality with *any* kind of Meraki device. Useful for networks where you might have only an MR access point.
+This is a very simple tool that creates and updates a Route53 `A` record that points to a network that doesn't have a static IP address.
+
+While Meraki already offers this feature on its MX firewalls by giving you a `dynamic-m.com` hostname, this tool allows you to have this functionality with *any* kind of Meraki device. Useful for networks where you might have only an MR access point.
 
 To use this tool, you need:
 - A Cisco Meraki device of any kind, deployed and running inside said network
