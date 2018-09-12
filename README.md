@@ -1,6 +1,6 @@
 # meraki-ddns
 
-This is a very simple tool that creates and updates a Route53 `A` record that points to a network that doesn't have a static IP address.
+This is a very simple tool that creates and updates a Route53 `A` record that points to a network that doesn't have a static IP address. Runs on Alpine Linux and takes up about ~26MBs of your memory.
 
 While Meraki already offers this feature on its MX firewalls by giving you a `dynamic-m.com` hostname, this tool allows you to have this functionality with *any* kind of Meraki device. Useful for networks where you might have only an MR access point.
 
@@ -25,3 +25,8 @@ Edit the Dockerfile with a text editor of your choosing, and replace the environ
 - `MERAKI_DEVICE_SN`: The serial number of the device that you want to use. Should look something like `XXXX-XXXX-XXXX`.
 
 Run `make`. Your container will be built and run automatically.
+
+## Roadmap
+- Add commands to pull pre-built image from Docker Hub
+- Add Cisco Umbrella address update functionality through DNS-O-Matic
+- Implement a better configuration system and allow the script to be run over multiple networks across multiple orgs
