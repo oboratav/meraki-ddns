@@ -1,6 +1,6 @@
 # meraki-ddns
 
-This is a very simple tool that creates and updates a Route53 `A` record that points to a network that doesn't have a static IP address. Runs on Alpine Linux and takes up about ~26MBs of your memory.
+This is a very simple tool that creates and updates a Route53 `A` record that points to a network that doesn't have a static IP address. Runs inside a Docker container with Alpine Linux and takes up about ~26MBs of your memory.
 
 While Meraki already offers this feature on its MX firewalls by giving you a `dynamic-m.com` hostname, this tool allows you to have this functionality with *any* kind of Meraki device. Useful for networks where you might have only an MR access point.
 
